@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pizza Stats</title>
+
+		<!-- Load CSS libraries -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+	<div id="content-1" class = "summary"></div>
+
+	<div id="content-2" class = "summary"></div>
+
+	<div id="content-3" class = "summary"></div>
+
+	<div id="content-4" class = "summary"></div>
+
+	<div id="content-5" class = "summary"></div>
+
+	<div id="content-6" class = "summary"></div>
+
+	<div id="content-7" class = "summary"></div>
+
+	<div id="content-8" class = "summary"></div>
+
+
+	<div>
+		<select id="area" onchange="createVisualization()">
+			<option value="all">All</option>
+			<option value="Boston">Boston</option>
+			<option value="Cambridge">Cambridge</option>
+			<option value="Somerville">Somerville</option>
+		</select>
+	</div>
+
+	</br>
+
+	<div>
+		<select id="order_type" onchange="createVisualization()">
+			<option value="all">All</option>
+			<option value="web">Web</option>
+			<option value="phone">Phone</option>
+		</select>
+	</div>
+
+	<div id="chart-area"></div>
+
+	<!-- Load JS libraries: jQuery, bootstrap, D3, D3 Tooltips -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/d3-tip.js"></script>
+
+	<!-- Data loading, bar chart rendering -->
+	<script src="js/delivery-data.js"></script>
+	<script src="js/feedback-data.js"></script>
+	<script src="js/barchart.js"></script>
+
+	<!-- Filter data, display bar chart & key figures -->
+	<script src="js/main.js"></script>
+	</body>
+</html>
